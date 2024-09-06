@@ -1,18 +1,18 @@
 package org.clase.listas.generalizadas;
 
-
 public class Nodo {
-    private int sw; //Si esta false es atomo -- /Si es true es lista
+    private int sw; // Si está en 0 es átomo, si está en 1 es lista
     private Nodo ligaLista;
-    private int Info;
+    private int info;
     private Nodo liga;
 
     public Nodo(int info) {
         this.sw = 0;
         this.ligaLista = null;
-        this.Info = info;
+        this.info = info;
         this.liga = null;
     }
+
 
     public int getSw() {
         return sw;
@@ -31,11 +31,11 @@ public class Nodo {
     }
 
     public int getInfo() {
-        return Info;
+        return info;
     }
 
     public void setInfo(int info) {
-        Info = info;
+        this.info = info;
     }
 
     public Nodo getLiga() {
@@ -45,6 +45,4 @@ public class Nodo {
     public void setLiga(Nodo liga) {
         this.liga = liga;
     }
-
-
 }
