@@ -3,16 +3,15 @@ package org.clase.listas.generalizadas;
 public class Nodo {
     private int sw; // Si está en 0 es átomo, si está en 1 es lista
     private Nodo ligaLista;
-    private int info;
+    private Object info;
     private Nodo liga;
 
-    public Nodo(int info) {
+    public Nodo(Object info) {
         this.sw = 0;
         this.ligaLista = null;
         this.info = info;
         this.liga = null;
     }
-
 
     public int getSw() {
         return sw;
@@ -30,11 +29,11 @@ public class Nodo {
         this.ligaLista = ligaLista;
     }
 
-    public int getInfo() {
+    public Object getInfo() {
         return info;
     }
 
-    public void setInfo(int info) {
+    public void setInfo(Object info) {
         this.info = info;
     }
 
